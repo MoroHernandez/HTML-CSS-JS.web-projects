@@ -1,0 +1,592 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#tamañohambur {
+    width: 46px;
+    height: 41px;
+    display: block;
+}
+
+.menu {
+    display: none;
+}
+
+#Botoncontactnav {
+    display: none;
+    color: white;
+    background-color: #8B48BF;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    font-size: 0.9rem;
+    border-radius: 40px;
+    font-weight: 500;
+    width: 9rem;
+    padding: 15px;
+}
+
+.contenedor-padletexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+#tamañopadle {
+    width: 25rem;
+    padding-top: 15%;
+}
+
+.textobajopadle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    text-align: end;
+    height: 39vh;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+}
+
+h1 {
+    color: #232C50;
+    font-size: 3rem; 
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+
+div.textobajopadle p {
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+div.textobajopadle a {
+    color: white;
+    background-color: #8B48BF;
+    text-align: center;
+    font-size: 0.9rem;
+    border-radius: 40px;
+    font-weight: 500;
+    width: 9rem;
+    padding: 15px;
+}
+
+.contenedor-pros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-color: #3CDDF3;
+    font-weight: 250;
+    padding: 4vh 0 4vh 2vh;
+    gap: 5vh;
+}
+
+#textoprodesk {
+    display: none;
+}
+
+article.contenedor-pros h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 70vw;
+}
+
+article.contenedor-pros p {
+    line-height: 1.7;
+    text-align: left;
+    white-space: pre;
+}
+
+.contenedor-lista {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+    margin-left: 7vw;
+    margin-bottom: 12%;
+    height: 60vh;
+}
+
+.tituloslista {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.enumeraciontitulo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+div.enumeraciontitulo span {
+    background-color: #8B48BF;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 25px;
+    width: 70px;
+    height: 43px;
+    border-radius: 30px;
+    font-weight: 500;
+    z-index: 2;
+}
+
+ul.tituloslista li {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 18px;
+    width: 100%;
+    height: 43px;
+    background: rgba(139, 72, 191, 0.3);
+    border-radius: 50px 0px 0px 50px;
+    z-index: 1;
+}
+
+ul.tituloslista p {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    color: #B3B2B7;
+    white-space: pre;
+    font-weight: 500;
+    line-height: 26px;
+    margin-left: 2%;
+    letter-spacing: -0.01em;
+}
+
+.contenedor-best {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titulomonth {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bolder;
+    -webkit-text-stroke: black 1px; 
+    font-size: 2.5rem;
+    letter-spacing: -0.01em;
+    color: #242E53;
+    margin-bottom: 35px;
+}
+
+.contenedorjugadores {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 36px;
+    height: 21vh;
+}
+
+.contenedorlebron {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 36px;
+    height: 21vh;
+}
+
+.titulojugadores {
+    font-style: normal;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #3F4868;
+}
+
+.textojugadores {
+    white-space: pre;
+    text-align: center;
+    color: #B3B2B7;
+    font-weight: 500;
+    line-height: 26px;
+    margin-left: 2%;
+    letter-spacing: -0.01em;
+}
+
+.contenedorbotonmore {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-more {
+    color: white;
+    background-color: #8B48BF;
+    text-align: center;
+    font-size: 0.9rem;
+    border-radius: 40px;
+    font-weight: 500;
+    width: 9rem;
+    padding: 15px;
+    border: 1px solid #000000;
+    margin-top: 80px;
+}
+
+.contenedor-year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3CDDF3;
+    white-space: pre;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+article.contenedor-year h2 {
+    color: white;
+    font-style: normal;
+    font-weight: bolder; 
+    font-size: 2.5rem;
+    letter-spacing: -0.01em;
+    margin-top: 40px;
+}
+
+.botongoforit {
+    color: white;
+    background: #232C50;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    font-size: 0.9rem;
+    border-radius: 40px;
+    font-weight: 500;
+    width: 9rem;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E26;
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 6vh;
+}
+
+input {
+    border: 1px solid #1E1E26;
+    color: #A0A0A0;
+    border-radius: 40px;
+    padding: 15px;
+    width: 65vw;
+}
+
+button {
+    background-color: #8B48BF;
+    border: 1px solid #1E1E26;
+    color: white;
+    border-radius: 40px;
+    padding: 15px;
+    width: 15vw;
+}
+
+.navfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 13vw;
+    margin-right: 14vw;
+}
+
+.lista1, .lista2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lista1 li, .lista2 li {
+    color: white;
+    font-style: normal;
+    font-size: 1.1rem;
+    font-weight: 200;
+    line-height: 23px;
+}
+
+.logosfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 5vh;
+}
+
+.redessociales {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.derechos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E1E26;
+    color: #8C8C94;
+    font-size: 0.8rem;
+    margin-top: 3vh;
+}
+
+@media (min-width:1440px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 13vw;
+}
+
+    #tamañohambur {
+        display: none;
+}
+
+    .menu {
+        display: block;
+        display: flex; 
+        font-weight: 600;
+        font-size: 0.95rem;
+        gap: 30px;
+        letter-spacing: normal;
+}
+
+    header ul li a {
+        color: #242E53;
+        
+}
+
+    header ul li a:visited {
+        color: #242E53;
+}
+
+    header ul li a:hover {
+        color: rgba(36, 46, 82, 0.6);
+}
+
+    #Botoncontactnav {
+        display: inline-block;
+
+}
+
+    .contenedor-padletexto {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 3vw;
+        margin-bottom: 60px;
+}
+
+    #tamañopadle {
+        width: 530px;
+        padding-top: 10%;
+}
+
+    .textobajopadle {
+        gap: 40px;
+        margin-top: 16vh;
+        width: 31vw;
+}
+
+    div.textobajopadle p {
+        font-size: 1.1rem;
+}
+
+    .contenedor-pros {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #8B48BF;
+        padding-left: 12vw;
+        padding-right: 14vw;
+        height: 16vh;
+}
+
+    article.contenedor-pros h3 {
+        width: 37vw;
+}
+
+    #textopromobile {
+        display: none;
+}
+
+    #textoprodesk {
+        display: block;
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 1.5;
+}
+
+    .contenedor-lista {
+        margin-top: 35px;
+        height: 33vh;
+    }
+
+    .tituloslista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 10vw;
+        height: 39vh;
+}
+
+    .enumeraciontitulo {
+        gap: 10px;
+}
+
+    div.enumeraciontitulo span {
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding-right: 1px;
+    }
+
+    div.enumeraciontitulo li {
+        background-color: white;
+        font-size: 1.1rem;
+}
+
+    div.enumeraciontitulo p {
+        padding-left: 80px;
+        font-size: 1.1rem;
+        white-space: normal;
+        width: 39vw;
+}
+
+.tercertitulo {
+    display: inline-block;
+    margin-left: 20vw;
+}
+
+    #tercertitulo {
+        margin-left: 350px;
+        margin-top: 60px;
+}
+
+    #tercerparafo {
+        margin-left: 358px;
+        white-space: normal;
+        width: 39vw;
+}
+
+    .contenedor-best {
+        flex-direction: row;
+        margin-right: 4vw;
+        margin-left: 4vw;
+}
+
+    .contenedorjugadores {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+        height: 21vh;
+}
+
+    .contenedorlebron {
+        font-size: 1.1rem;
+}
+
+    .contenedorbotonmore {
+        margin-bottom: 16vh;
+}
+
+    .boton-more:hover {
+        background-color: rgba(139, 72, 191, 0.7);
+        border: 1px rgba(139, 72, 191, 0.7);
+}
+
+    .contenedor-year {
+        flex-direction: row;
+        background-color: #8B48BF;
+        height: 20vh;
+}
+
+    article.contenedor-year h2 {
+        margin-left: 16vh;
+        white-space: normal;
+        text-align: start;
+        width: 30vw;
+}
+
+    .botongoforit {
+        background-color: white;
+        color: #8B48BF;
+        margin-right: 18vh;
+}
+
+.contenedornav {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 14vh;
+}
+
+form {
+    height: 5vh;
+    width: 21vw;
+    margin-right: 9vw;
+}
+
+.navfooter {
+    gap: 140px;
+    margin-left: 6vw;
+}
+
+.lista1, .lista2 {
+    width: 9vw;
+}
+
+.logosfooter {
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+    gap: 100px;
+    margin-top: 0;
+}
+
+.redessociales {
+    gap: 13px;
+}
+
+.derechos {
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 9vw;
+    margin-bottom: 20px;
+}
+}
