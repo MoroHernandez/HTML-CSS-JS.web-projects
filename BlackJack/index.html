@@ -17,8 +17,8 @@
         <div id="divBotones" class="col text-center">
 
             <button id="btnNuevo" class="btn btn-danger">New game</button>
-            <button id="btnPedir" class="btn btn-primary">Order card</button>
-            <button id="btnDetener" class="btn btn-primary">Stop</button>
+            <button id="btnPedir"  class="btn btn-primary">Order card</button>
+            <button id="btnDetener"  class="btn btn-primary">Stop</button>
 
         </div>
 
@@ -28,7 +28,7 @@
         <div class="col">
 
             <h1>Player 1 - <small>0</small></h1>
-            <div id="jugador-cartas"></div>
+            <div id="jugador-cartas" class="divCartas"></div>
             
         </div>
     </div>
@@ -37,12 +37,18 @@
         <div class="col">
 
             <h1>Computer - <small>0</small></h1>
-            <div id="computadora-cartas"></div>
+            <div id="computadora-cartas" class="divCartas"></div>
             
         </div>
     </div>
 
-    <script src="assets/js/game.js"></script>
+    <script src="assets/js/game-min.js"></script>
+    
+    <script>
+            document.querySelector('#btnNuevo').addEventListener('click', () => {
+                miModulo.nuevoJuego();
+            });
 
+    </script>
 </body>
 </html>
